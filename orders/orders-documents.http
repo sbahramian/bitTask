@@ -1,0 +1,23 @@
+### install REST Client for run.
+
+### Get list orders
+GET http://localhost:3000/orders
+
+### Get order by id
+GET http://localhost:3000/orders/1069576189839936000
+
+### create new order
+POST http://localhost:3000/orders
+content-type: application/json
+
+{
+    "symbol": "ETHUSDT",
+    "qty": "0.12",
+    "side": "Buy",
+    "type": "LIMIT",
+    "price": 100,
+    "timeInForce": "GTC"
+}
+
+### Delete order by id
+DELETE http://localhost:3000/orders/1069615870094975744
